@@ -1,0 +1,5 @@
+1. Union Based Attack -> syöttin käyttäjä kentän 
+-> 1. seppo' OR '1'='1, seppo' -- 
+-> 2. passu kentän -> 'OR'1'='1-
+ -> se toimi koska, '1'='1' palautta true aina jos käyttäjän nimi tiedään ja toinen tapa commentoi muut
+2. comment payload -> 

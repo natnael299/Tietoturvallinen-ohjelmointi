@@ -1,0 +1,11 @@
+Ohjelmistohyökkäykset -> torjutaan käyttämällä virustorjunta, tarkistussumma ja palomuuri, päivittämällä näitä ohjelma että, ne voivat olla ajan tasalla. vähennetään vaikutusta tekemällä varmuus kopiointi. 
+
+IP-varkaudet -> pitämällä järjestelmien turvaominaisuudet ajan tasalla, kouluttamalla työntekijöitä. vähennetään salaamalla tiedot ja seuraamalla niiden käyttöä. 
+
+Identiteettivarkaudet -> kouluttamalla, ohjeistuksella ja pitämällä huolen siitä, ettei paljasta itsestä netissä sellaista tietoa. vähennetään vaikutusta Sulje tunnukset ja vaihda salasanat nopeasti. 
+
+Laitevarkaudet -> konfiguroimalla loppukäyttäjien laitteet ja kouluttamalla työntekijöitä. vähennetään vaikutusta muistamalla käyttä vahva salasana ja ottamalla etätyhjenus käytön. 
+
+Sabotaasi -> laitteiden ja järjestelmien turvatoimien pitää olla ajan tasalla, ja henkilöstön koulutettuna. vähennetään vaikutusta tekemällä varmuuskopiointi. 
+
+Kiristys -> tietokoneen suojauksen pitäminen päivitettynä, tuntemattomista lähteistä ladattavien ohjelmien välttäminen. vähennetään vaikutusta tekemällä varmuuskopiointi. 
