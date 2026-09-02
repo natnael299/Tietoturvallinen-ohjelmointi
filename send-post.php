@@ -17,6 +17,4 @@ try {
 } catch (PDOException $e) {
     die('Virhe: ' . $e->getMessage());
 }
-
-
 ?>

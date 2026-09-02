@@ -1,11 +1,9 @@
 <?php 
 include 'connect.php';
 ?>
-
 <ul>
     <hr>
-    <?php
-        
+    <?php      
             $sql = "SELECT * FROM posts;";
             try {
                 $query = $conn->prepare($sql);
@@ -25,9 +23,14 @@ include 'connect.php';
                 <h3><?php echo $row['title']; ?></h3>
                 <p><i><?php echo $row['posted'] . ' – ' . $author['realname']; ?></i></p>
                 <p><?php echo $row['body']; ?></p>
+                   <a type="button" href="./edit.php?id=<?= $row["id"] ?>">
+                    Edit Message
+                </a>
+                   <a href='./delete.php?id=<?= $row["id"] ?>'>
+                    Delete Message
+                </a>
                 <hr>
             </li>
             <?php }
-        
     ?>
 </ul>
