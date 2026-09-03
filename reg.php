@@ -6,12 +6,13 @@ try{
    $realname = htmlspecialchars($_POST['realname']);
    $password = htmlspecialchars($_POST['password']);
    $hash = password_hash($password, PASSWORD_DEFAULT);
-   $sql = "INSERT INTO users (username, realname, password) values(:username,:realname,:password)";
+   $sql = "INSERT INTO users (username, realname, password, role) values(:username,:realname,:password)";
    $query = $conn -> prepare($sql);
    if($query->execute([
     'username' => $username,
     'realname' => $realname,
     'password' => $hash,
+    'role'=> 'user',
 ])){
       echo "Registeration unsuccessfull";
       $sql = "SELECT * FROM users;";

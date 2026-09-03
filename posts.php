@@ -22,13 +22,22 @@ include 'connect.php';
             <li>
                 <h3><?php echo $row['title']; ?></h3>
                 <p><i><?php echo $row['posted'] . ' – ' . $author['realname']; ?></i></p>
+
                 <p><?php echo $row['body']; ?></p>
-                   <a type="button" href="./edit.php?id=<?= $row["id"] ?>">
-                    Edit Message
-                </a>
-                   <a href='./delete.php?id=<?= $row["id"] ?>'>
+
+                  <!-- edit button -->
+                    <?php if($_SESSION['user']["role"] == "admin"|| $_SESSION['user']["role"] == "moderator" ||   $_SESSION["user"]["id"] == $row["author"]): ?>
+                       <a type="button" href="./edit.php?id=<?= $row["id"] ?>">
+                           Edit Message
+                        </a>
+                    <?php endif; ?>
+
+                <!-- delete button -->
+                <?php if($_SESSION['user']["role"] == "admin"): ?>
+                  <a href='./delete.php?id=<?= $row["id"] ?>'>
                     Delete Message
-                </a>
+                  </a>
+                <?php endif; ?>
                 <hr>
             </li>
             <?php }
